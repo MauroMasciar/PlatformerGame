@@ -21,6 +21,7 @@ public class Game implements Runnable {
 
     @Override
     public void run() {
+	gamePanel.requestFocus();
 	double  timePerFrame = 1000000000.0 / FPS_SET;
 	long lastFrame = System.nanoTime();
 	long now = System.nanoTime();
